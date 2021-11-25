@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>菜鸟教程(runoob.com)</title>
+<style>
+ol{
+	counter-reset: section;
+	list-style-type: none;
+}
+
+li::before{
+	counter-increment: section;
+	content:counter(section,".")"" ;
+}
+</style>
+</head>
+<body>
+
+<ol>
+	<li>茉莉花</li>
+	<li>茉莉花
+	<ol>
+		<li>茉莉花</li>
+		<li>茉莉花</li>
+		<li>茉莉花
+		<ol>
+			<li>茉莉花</li>
+			<li>茉莉花</li>
+			<li>茉莉花</li>
+		</ol>
+	    </li>
+	    <li>茉莉花</li>
+	</ol>
+    </li>
+    <li>茉莉花</li>
+    <li>茉莉花</li>
+</ol>
+
+<p><b>茉莉：</b>好一朵美丽的茉莉花</p>
+
+</body>
+</html>
